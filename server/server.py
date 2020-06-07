@@ -33,6 +33,8 @@ app = Flask(__name__, static_url_path='', static_folder=os.path.abspath('../stat
 @app.route('/predict', methods=['POST'])
 def predict():
     now = time.time()
+    global jsonData
+    jsonData = request.data
     values = json.loads(request.data)
     midi_data = pretty_midi.PrettyMIDI(StringIO(''.join(chr(v) for v in values)))
     duration = float(request.args.get('duration'))
@@ -49,6 +51,15 @@ def index():
 def download():
     directory = os.getcwd()
     return send_from_directory('../static/midi/','midTest.mid')
+
+@app.route('/json',methods=['GET','POST'])
+def jsonTry():
+    #directory = os.getcwd()
+    # jsonData = request.data
+    # jsonData = json.dumps([ { 'a' : 111, 'b' : 2, 'c' : 3, 'd' : 4, 'e' : 5 } ])
+    fileObject = open('testJson.json', 'w')
+    fileObject.write(jsonData)
+    fileObject.close()
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)
