@@ -45,10 +45,10 @@ def predict():
 def index():
     return send_file('../static/index.html')
 
-@app.route('/download/rnn',methods=['GET','POST'])
+@app.route('/download/midi',methods=['GET','POST'])
 def download():
     directory = os.getcwd()
-    return send_from_directory(directory,'basic_rnn.mag')
+    return send_from_directory('../static/images/','midTest.mid')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)

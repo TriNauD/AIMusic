@@ -67,7 +67,7 @@ export class About extends events.EventEmitter{
 	downloadMidi(){
 		// alert("is pressed");
 		const elt = document.createElement('iframe');
-		elt.src = "http://127.0.0.1:8080/download/rnn"
+		elt.src = "http://127.0.0.1:8080/download/midi"
 		elt.style.display = 'none';
 		document.body.appendChild(elt);
 	}
