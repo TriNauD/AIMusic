@@ -18,10 +18,10 @@ import 'style/about.css'
 import YouTubeIframeLoader from 'youtube-iframe'
 import events from 'events'
 
-const magentaLink = 'https://magenta.tensorflow.org/'
-const tfLink = 'https://www.tensorflow.org/'
-const toneLink = 'https://github.com/Tonejs/Tone.js'
-const sourceCode = 'https://github.com/googlecreativelab/aiexperiments-ai-duet'
+// const magentaLink = 'https://magenta.tensorflow.org/'
+// const tfLink = 'https://www.tensorflow.org/'
+// const toneLink = 'https://github.com/Tonejs/Tone.js'
+// const sourceCode = 'https://github.com/googlecreativelab/aiexperiments-ai-duet'
 /*YouTube视频控件说明文本
 const blurbCopy = `Built by Yotam Mann with friends on the Magenta and Creative Lab teams at Google. 
 					It uses <a target='_blank' href='${tfLink}'>TensorFlow</a>,
@@ -45,7 +45,6 @@ export class About extends events.EventEmitter{
 		container.appendChild(this._toggleButton)
 		this._toggleButton.addEventListener('click', (e) => {
 			e.preventDefault()
-			alert("pressed")
 			this.downloadMidi()
 			/*if (this.isOpen()){
 				this.close()
@@ -140,12 +139,10 @@ export class About extends events.EventEmitter{
 		this._toggleButton.classList.add('show')
 	}
 	downloadMidi(){
-		const elt = document.createElement('a');
-		elt.setAttribute('href',url);
-		elt.setAttribute('download','download.png');
+		// alert("is pressed");
+		const elt = document.createElement('iframe');
+		elt.src = "http://127.0.0.1:8080/download/rnn"
 		elt.style.display = 'none';
 		document.body.appendChild(elt);
-		elt.click();
-		document.body.removeChild(elt);
 	}
 }
