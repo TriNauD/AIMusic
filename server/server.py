@@ -48,7 +48,7 @@ def index():
 @app.route('/download/midi',methods=['GET','POST'])
 def download():
     directory = os.getcwd()
-    return send_from_directory('../static/images/','midTest.mid')
+    return send_from_directory('../static/midi/','midTest.mid')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080)
