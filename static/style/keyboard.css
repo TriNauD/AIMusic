@@ -1,9 +1,10 @@
 @import 'common.scss';
 
-$borderWidth : 2px;
-$borderColor: rgb(215, 215, 215);
+$borderWidth : 1px;/*键盘的边框线宽*/
+$borderColor: rgb(215, 215, 215);/*键盘的边框线颜色*/
+$borderColor: white;/*键盘的边框线颜色*/
 $blackColor: black;
-$whiteColor: rgb(34, 34, 34);
+$whiteColor: white;
 $blackHover : #aaa;
 $whiteHover : #aaa;
 
@@ -15,6 +16,7 @@ $blackKeyMargin : $borderWidth + 2px;
 	width: calc(100% - 2 * #{$borderWidth});
 	user-select: none;
 	cursor: pointer;
+	opacity:1;
 
 	.key {
 		position: absolute;
