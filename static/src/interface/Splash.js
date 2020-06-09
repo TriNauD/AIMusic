@@ -82,7 +82,6 @@ class Splash extends events.EventEmitter{
 	}
 
 	jumpToDemo(){
-		alert("is pressed");
 		window.location.href = "http://127.0.0.1:8080/demo"
 	}
 }
