@@ -93,24 +93,25 @@ $topMargin: 35px;
 			margin-left: auto;
 			margin-right: auto;
 			text-transform: uppercase;
-			&.clickable {
-				cursor: pointer;
-				transition: transform 0.1s;
-				&:hover {
+			cursor: pointer;
+			&:hover {
 					transform: scale(1.1);
-				 }
 			 }
-			#demoBtnText {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				line-height: $demoBtnHeight;
-				font-size: 22px;
-				text-align: center;
-				font-weight: normal;
-				color: $orange;
-				background-color: black;
-			}
+			/*&.clickable {*/
+			/*	transition: transform 0.1s;*/
+			/*	*/
+			/*	#demoBtnText {*/
+			/*		position: absolute;*/
+			/*		width: 100%;*/
+			/*		height: 100%;*/
+			/*		line-height: $demoBtnHeight;*/
+			/*		font-size: 22px;*/
+			/*		text-align: center;*/
+			/*		font-weight: normal;*/
+			/*		color: $orange;*/
+			/*		background-color: black;*/
+			/*	}*/
+			/* }*/
 		}
 		$loaderWidth: 200px;
 		$loaderHeight: 50px;
