@@ -49,10 +49,14 @@ class Splash extends events.EventEmitter{
 			this._clicked = true
 			this.emit('click')
 		})
+		this._clicked = false
+		const demoBtn = document.createElement('div')
+		demoBtn.id = 'demoBtn'
+		titleContainer.appendChild(demoBtn)
 
-		const badges = document.createElement('div')
-		badges.id = 'badges'
-		splash.appendChild(badges)
+		// const badges = document.createElement('div')
+		// badges.id = 'badges'
+		// splash.appendChild(badges)
 
 	}
 

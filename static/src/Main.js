@@ -113,3 +113,25 @@ tutorial.on('aiKeyDown', (note, time) => {
 tutorial.on('aiKeyUp', (note, time) => {
 	ai.keyUp(note, time)
 })
+// /////////////// DEMO  ///////////////////
+// const container = document.createElement('div')
+// container.id = 'container'
+// document.body.appendChild(container)
+//
+// const glow = new Glow(container)
+// // const keyboard = new Keyboard(container)
+//
+// // const sound = new Sound()
+// // sound.load()
+//
+// keyboard.on('keyDown', (note) => {
+// 	sound.keyDown(note)
+// 	ai.keyDown(note)
+// 	glow.user()
+// })
+//
+// keyboard.on('keyUp', (note) => {
+// 	sound.keyUp(note)
+// 	ai.keyUp(note)
+// 	glow.user()
+// })

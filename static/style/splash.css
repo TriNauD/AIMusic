@@ -81,9 +81,39 @@ $topMargin: 35px;
 				transform: scale(1.1);
 			}
 		}
-
+		$demoBtnWidth: 200px;
+		$demoBtnHeight: 50px;
+		#demoBtn{
+			position: relative;
+			margin-top: $topMargin;
+			background-color: black;
+			border: 2px solid $orange;
+			width: $demoBtnWidth;
+			height: $demoBtnHeight;
+			margin-left: auto;
+			margin-right: auto;
+			text-transform: uppercase;
+			&.clickable {
+				cursor: pointer;
+				transition: transform 0.1s;
+				&:hover {
+					transform: scale(1.1);
+				 }
+			 }
+			#demoBtnText {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: $loaderHeight;
+				font-size: 22px;
+				text-align: center;
+				font-weight: normal;
+				color: $orange;
+				background-color: black;
+			}
+		}
 		$loaderWidth: 200px;
-		$loaderHeight: 60px;
+		$loaderHeight: 50px;
 
 		#loader {
 			position: relative;
@@ -196,7 +226,7 @@ $topMargin: 35px;
 			width: $badgesWidth;
 			left: 50%;
 			margin-left: -$badgesWidth/2;
-			// left: $smallBadgeMargin * 2;			
+			// left: $smallBadgeMargin * 2;
 			// left: 50%;
 			// transform: translate(-50%, 0);
 		}
@@ -214,7 +244,7 @@ $topMargin: 35px;
 
 			@media (max-width: $smallScreen) {
 				width: $smallBadgeWidth;
-				height: $smallBadgeHeight;	
+				height: $smallBadgeHeight;
 				font-size: 10px!important;
 				margin-right: $smallBadgeMargin;
 				opacity: 1;
@@ -233,7 +263,7 @@ $topMargin: 35px;
 
 		#googleFriends {
 			cursor: initial;
-			background-image: url(../images/badgeFriends_master.svg);	
+			background-image: url(../images/badgeFriends_master.svg);
 			margin-right: 0px;
 		}
 
