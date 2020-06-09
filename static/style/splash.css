@@ -94,9 +94,21 @@ $topMargin: 35px;
 			margin-right: auto;
 			text-transform: uppercase;
 			cursor: pointer;
+			content: ''
 			&:hover {
 					transform: scale(1.1);
-			 }
+			}
+			#demoBtnText {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				line-height: $demoBtnHeight;
+				font-size: 22px;
+				text-align: center;
+				font-weight: normal;
+				color: $orange;
+				background-color: black;
+			}
 			/*&.clickable {*/
 			/*	transition: transform 0.1s;*/
 			/*	*/
