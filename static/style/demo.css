@@ -1,0 +1,55 @@
+/*#alertBtn {*/
+/*    background-color: dodgerblue;*/
+/*}*/
+html, body {
+    width: 100%;
+    height: 100%;
+
+}
+
+#demoTitleContainer {
+    width: 100%;
+    height: 15%;
+    background-color: dodgerblue;
+
+}
+
+#rows{
+    width: 100%;
+    height: 85%;
+    background-color: cadetblue;
+}
+#demoTitle {
+    width: 100%;
+    height: 60%;
+    content: "Title";
+    font-size: 30px;
+    background-color: aqua;
+}
+
+#demoSubtitle {
+    width: 100%;
+    height: 40%;
+    content: "Subtitle";
+    font-size: 20px;
+    background-color: blue;
+}
+
+.row {
+    margin: 3%;
+    width: 100%;
+    height: 50%;
+}
+
+.col {
+    width: 17.5%;
+    height: 100%;
+    background: yellow;
+    float: left;
+    margin-right: 23px;
+}
+
+.border-color-gap {
+    box-sizing: border-box;
+    border-left: 10px solid #ffffff;
+}

@@ -14,23 +14,40 @@
  * limitations under the License.
  */
 
-import {Keyboard} from 'keyboard/Keyboard'
-import {AI} from 'ai/AI'
-import {Sound} from 'sound/Sound'
-import {Glow} from 'interface/Glow'
-import {Splash} from 'interface/Splash'
-import {About} from 'interface/About'
-import {Tutorial} from 'ai/Tutorial'
-import 'babel-polyfill'
+// import {Glow} from 'interface/Glow'
+// import 'babel-polyfill'
+//
+//
+// /////////////// GLOW ///////////////////
+//
+// const container = document.createElement('div')
+// container.id = 'container'
+// document.body.appendChild(container)
+//
+// const glow = new Glow(container)
+// glow.user();
+import Buffer from 'Tone/core/Buffer'
+import 'style/demo.css'
+import events from 'events'
+class Demo extends events.EventEmitter {
+    constructor(container) {
+        super();
 
+    }
+}
+function onDemoCreate(){
+    var body = document.body
+    const titleContainer = document.createElement('div')
+    titleContainer.id = 'titleContainer'
+    body.appendChild(titleContainer)
 
-/////////////// GLOW ///////////////////
+    const title = document.createElement('div')
+    title.id = 'title'
+    title.textContent = 'A.I. 钢琴'
+    titleContainer.appendChild(title)
+}
 
-const container = document.createElement('div')
-container.id = 'container'
-document.body.appendChild(container)
-
-const glow = new Glow(container)
-glow.ai();
-
+function alertDemo(){
+    alert("alert in Demo.js")
+}
 
