@@ -49,20 +49,19 @@ class Splash extends events.EventEmitter{
 			this._clicked = true
 			this.emit('click')
 		})
-		this._clicked = false
 
-		const demoBtn = document.createElement('div')
-		demoBtn.id = 'demoBtn'
-		titleContainer.appendChild(demoBtn)
-
+		//demo toggle button
+		this._toggleButton = document.createElement('div')
+		this._toggleButton.id = 'demoBtn'
+		titleContainer.appendChild(this._toggleButton)
 		const demoBtnText = document.createElement('div')
 		demoBtnText.id = 'demoBtnText'
-		demoBtn.appendChild(demoBtnText)
+		this._toggleButton.appendChild(demoBtnText)
 		demoBtnText.textContent = 'Demo'
-
-		// const badges = document.createElement('div')
-		// badges.id = 'badges'
-		// splash.appendChild(badges)
+		this._toggleButton.addEventListener('click', (e) => {
+			e.preventDefault()
+			this.jumpToDemo()
+		})
 
 	}
 
@@ -80,6 +79,11 @@ class Splash extends events.EventEmitter{
 
 	hide(){
 		this._splash.classList.add('disappear')
+	}
+
+	jumpToDemo(){
+		alert("is pressed");
+		window.location.href = "http://127.0.0.1:8080/demo"
 	}
 }
 

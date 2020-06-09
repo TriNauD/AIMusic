@@ -47,6 +47,10 @@ def predict():
 def index():
     return send_file('../static/index.html')
 
+@app.route('/demo', methods=['GET', 'POST'])
+def demo():
+    return send_file('../static/demo.html')
+
 @app.route('/download/midi',methods=['GET','POST'])
 def download():
     directory = os.getcwd()
