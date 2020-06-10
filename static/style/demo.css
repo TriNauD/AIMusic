@@ -9,7 +9,7 @@ body {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .titleContainer {
@@ -59,17 +59,23 @@ li {
     position: relative; /* 这是div2的父组件，目的是使div2下方具有绝对位置的子组件都能相对于此显示 */
 }
 
-li:hover .demoMusicPlayer { /*div2类必须是li的子组件*/
+li:hover .demoMusicPlayer {
     opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-li:hover {
-    cursor: pointer;
+li:hover .musicPic {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: 0.2s;
 }
+
 .musicPic {
     width: 152px;
     height: 152px;
 }
+
 .musicName {
     font-family: Verdana;
     color: white;
