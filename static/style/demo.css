@@ -1,6 +1,3 @@
-/*#alertBtn {*/
-/*    background-color: dodgerblue;*/
-/*}*/
 html {
     width: 100%;
     height: 100%;
@@ -10,10 +7,9 @@ html {
 body {
     width: 100%;
     height: 100%;
-    /*background-image: url(../images/glow-bg2.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
-    /*opacity: 0.8;*/
+    overflow-x:hidden;
 }
 
 .titleContainer {
