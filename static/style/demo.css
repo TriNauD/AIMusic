@@ -20,7 +20,7 @@ body {
     vertical-align: middle;
     width: 100%;
     height: 15%;
-    border-bottom: white solid 1px;
+    border-bottom: gray solid 1px;
 }
 
 .titleIcon {
@@ -57,6 +57,7 @@ li {
     height: 300px; /*设置高度为300px*/
     float: left; /*为了使列表中的各个项目能够横向显示，CSS中的float设为left*/
     margin-left: 3%; /*设置项目的右边缘为10px*/
+    margin-top: 5%;
     margin-bottom: 10px; /*设置项目的下边缘为10px*/
     text-align: center; /*使项目中的图片、文字能居中显示*/
     position: relative; /* 这是div2的父组件，目的是使div2下方具有绝对位置的子组件都能相对于此显示 */
@@ -66,6 +67,13 @@ li:hover .demoMusicPlayer { /*div2类必须是li的子组件*/
     opacity: 0.5;
 }
 
+li:hover {
+    cursor: pointer;
+}
+.musicPic {
+    width: 152px;
+    height: 152px;
+}
 .musicName {
     font-family: Verdana;
     color: white;
