@@ -32,67 +32,27 @@ html, body {
     color: lightgray;
 }
 
-#rows {
-    width: 100%;
-    height: 85%;
-}
 
-
-.row {
-    margin-top: 2%;
-    width: 100%;
-    height: 50%;
-}
-
-.col {
-    width: 17.5%;
-    height: 100%;
-    float: left;
-    margin-left: 2%;
-    position: relative;
-}
-
-.demoImg {
-    left: 50%;
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    margin-left: -76px;
-}
-
-.demoMusicPlayer {
-    width: 100%;
-    bottom: 0;
-}
-
-.demoMusicTitle{
-    width: 100%;
-    position: absolute;
-    top: 70%;
-    margin-left: 10%;
-    text-align: left;
-    color: white;
-}
 li {
     list-style-type: none; /*不显示项目符号*/
     width: 300px; /*设置宽度为300px*/
     height: 300px; /*设置高度为300px*/
     float: left; /*为了使列表中的各个项目能够横向显示，CSS中的float设为left*/
-    background-color: white;
     margin-right: 10px; /*设置项目的右边缘为10px*/
     margin-bottom: 10px; /*设置项目的下边缘为10px*/
     text-align: center; /*使项目中的图片、文字能居中显示*/
     position: relative; /* 这是div2的父组件，目的是使div2下方具有绝对位置的子组件都能相对于此显示 */
 }
+
 .div2 {
-	position: absolute; /* 使div能相对于li显示 */
-	background: linear-gradient(#eeeeee, #f3f3f3);
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	left: 0px;
-	top: 0px;
-        opacity: 0; /*不透明度为0*/
+    position: absolute; /* 使div能相对于li显示 */
+    background: linear-gradient(#eeeeee, #f3f3f3);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    left: 0px;
+    top: 0px;
+    opacity: 0; /*不透明度为0*/
 }
 
 li:hover { /*div2类必须是li的子组件*/
