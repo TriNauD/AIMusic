@@ -61,11 +61,11 @@ li {
     position: relative; /* 这是div2的父组件，目的是使div2下方具有绝对位置的子组件都能相对于此显示 */
 }
 
-li:hover .demoMusicPlayer {
-    opacity: 0.5;
-    cursor: pointer;
-    transition: 0.2s;
-}
+/*li:hover .demoMusicPlayer {*/
+/*    opacity: 0.5;*/
+/*    cursor: pointer;*/
+/*    transition: 0.2s;*/
+/*}*/
 
 li:hover .musicPic {
     opacity: 0.6;
@@ -89,5 +89,8 @@ li:hover .musicPic {
     color: lightgray;
     font-size: 15px;
 
+}
+.demoMusicPlayer {
+    /*color: black;*/
 }
 
