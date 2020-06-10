@@ -33,7 +33,7 @@ body {
     height: 90%;
 }
 
-.titleText{
+.titleText {
     width: 92%;
     float: left;
     color: white;
@@ -59,12 +59,23 @@ li {
     margin-left: 3%; /*设置项目的右边缘为10px*/
     margin-bottom: 10px; /*设置项目的下边缘为10px*/
     text-align: center; /*使项目中的图片、文字能居中显示*/
-    font-family: "Verdana";
-    color: white;
     position: relative; /* 这是div2的父组件，目的是使div2下方具有绝对位置的子组件都能相对于此显示 */
 }
 
 li:hover .demoMusicPlayer { /*div2类必须是li的子组件*/
     opacity: 0.5;
+}
+
+.musicName {
+    font-family: Verdana;
+    color: white;
+    font-size: 20px;
+}
+
+.description {
+    font-family: "Courier New";
+    color: lightgray;
+    font-size: 15px;
+
 }
 
