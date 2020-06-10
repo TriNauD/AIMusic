@@ -54,10 +54,17 @@ class Splash extends events.EventEmitter{
 		this._toggleButton = document.createElement('div')
 		this._toggleButton.id = 'demoBtn'
 		titleContainer.appendChild(this._toggleButton)
+
 		const demoBtnText = document.createElement('div')
 		demoBtnText.id = 'demoBtnText'
 		this._toggleButton.appendChild(demoBtnText)
 		demoBtnText.textContent = 'Demo'
+
+		const demoBtnIcon = document.createElement('div')
+		demoBtnIcon.id = 'demoBtnIcon'
+		this._toggleButton.appendChild(demoBtnIcon)
+
+		//button jump to demo page
 		this._toggleButton.addEventListener('click', (e) => {
 			e.preventDefault()
 			this.jumpToDemo()

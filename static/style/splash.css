@@ -81,8 +81,11 @@ $topMargin: 35px;
 				transform: scale(1.1);
 			}
 		}
+
 		$demoBtnWidth: 200px;
 		$demoBtnHeight: 50px;
+		$imgWidth: 40px;
+		$margin : 52px;
 		#demoBtn{
 			position: relative;
 			margin-top: $topMargin;
@@ -94,9 +97,16 @@ $topMargin: 35px;
 			margin-right: auto;
 			text-transform: uppercase;
 			cursor: pointer;
-			transition: transform 0.1s;
 			&:hover {
 				transform: scale(1.1);
+			}
+			#demoBtnIcon {
+				margin-left: 50px;
+				width: 30px;
+				height: 100%;
+				background-image : url(../images/yellow_play_triangle.svg);
+				background-position: center center;
+				background-repeat: no-repeat;
 			}
 			#demoBtnText {
 				position: absolute;
@@ -105,25 +115,10 @@ $topMargin: 35px;
 				line-height: $demoBtnHeight;
 				font-size: 22px;
 				text-align: center;
+				margin-left: 20px;
 				font-weight: normal;
 				color: $orange;
-				background-color: black;
 			}
-			/*&.clickable {*/
-			/*	transition: transform 0.1s;*/
-			/*	*/
-			/*	#demoBtnText {*/
-			/*		position: absolute;*/
-			/*		width: 100%;*/
-			/*		height: 100%;*/
-			/*		line-height: $demoBtnHeight;*/
-			/*		font-size: 22px;*/
-			/*		text-align: center;*/
-			/*		font-weight: normal;*/
-			/*		color: $orange;*/
-			/*		background-color: black;*/
-			/*	}*/
-			/* }*/
 		}
 		$loaderWidth: 200px;
 		$loaderHeight: 50px;
