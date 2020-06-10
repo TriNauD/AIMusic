@@ -1,23 +1,29 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install -y \
-    pkg-config \
-    libpng-dev \
-    libjpeg8-dev \
-    libfreetype6-dev \
-    libblas-dev \
-    liblapack-dev \
-    libatlas-base-dev \
-    gfortran \
-    python \
-    python-dev \
-    python-pip \
-    curl && \
-    curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash - && \
-    apt-get install -y nodejs
+RUN apt-get update
+RUN apt-get install -y pkg-config
+RUN apt-get install -y libpng-dev
+RUN apt-get install -y libjpeg8-dev
+RUN apt-get install -y libfreetype6-dev
+RUN apt-get install -y libblas-dev
+RUN apt-get install -y liblapack-dev
+RUN apt-get install -y libatlas-base-dev
+RUN apt-get install -y gfortran
+RUN apt-get install -y python
+RUN apt-get install -y python-dev
+RUN apt-get install -y python-pip
+RUN apt-get install -y nodejs
+RUN node -v
+RUN apt-get install -y npm
+RUN apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 
-RUN pip install -U https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.12.1-cp27-none-linux_x86_64.whl
+
+RUN pip -V && \
+	python -V
+
+RUN pip install tensorflow==0.12.1
 
 COPY ./server/requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt

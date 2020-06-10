@@ -4,39 +4,43 @@
 html, body {
     width: 100%;
     height: 100%;
-
+    background-color: black;
 }
 
 #demoTitleContainer {
+    vertical-align: middle;
     width: 100%;
     height: 15%;
-    background-color: dodgerblue;
-
+    background-color: black;
+    border-bottom: white solid 1px;
+    font-family: "Courier New";
 }
-
-#rows{
-    width: 100%;
-    height: 85%;
-    background-color: cadetblue;
+#demoIcon {
 }
 #demoTitle {
     width: 100%;
     height: 60%;
-    content: "Title";
+    text-align: left;
     font-size: 30px;
-    background-color: aqua;
+    color: white;
 }
 
 #demoSubtitle {
     width: 100%;
     height: 40%;
-    content: "Subtitle";
-    font-size: 20px;
-    background-color: blue;
+    text-align: left;
+    font-size: 15px;
+    color: lightgray;
 }
 
+#rows {
+    width: 100%;
+    height: 85%;
+}
+
+
 .row {
-    margin: 3%;
+    margin-top: 2%;
     width: 100%;
     height: 50%;
 }
@@ -44,9 +48,9 @@ html, body {
 .col {
     width: 17.5%;
     height: 100%;
-    background: yellow;
+    background: azure;
     float: left;
-    margin-right: 23px;
+    margin-left: 2%;
 }
 
 .border-color-gap {
