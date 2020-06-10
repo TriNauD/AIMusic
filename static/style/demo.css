@@ -60,10 +60,9 @@ html, body {
     margin-left: -76px;
 }
 
-.musicPlayer {
+.demoMusicPlayer {
     width: 100%;
     bottom: 0;
-    position: absolute;
 }
 
 .demoMusicTitle{
