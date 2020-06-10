@@ -23,7 +23,9 @@ body {
     width: 8%;
     float: left;
 }
-
+titleIcon:hover {
+    cursor: pointer;
+}
 #iconPic {
     width: 90%;
     height: 90%;
