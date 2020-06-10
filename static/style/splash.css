@@ -84,8 +84,7 @@ $topMargin: 35px;
 
 		$demoBtnWidth: 200px;
 		$demoBtnHeight: 50px;
-		$imgWidth: 40px;
-		$margin : 52px;
+
 		#demoBtn{
 			position: relative;
 			margin-top: $topMargin;
